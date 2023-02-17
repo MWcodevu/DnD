@@ -40,11 +40,12 @@ def start_of_round(a,b,c,d):
     friendly_inits = {}
     for i in range(1,enemy_number+1):
         j = f"Enemy {i}"
-        k = f"Friendly {i}"
         enemy_inits.update({j:'0'})
-        friendly_inits.update({k:'0'})
         enemy_mod.update({j:enemy_mod[i]})
-        friendly_mod.update({k:friendly_mod[i]})
+    for i in range(1,friendly_number+1):
+        k = f"Friendly {i}"
+        friendly_inits.update({k:'0'})
+        friendly_mod.update({k:friendly_mod[i]})        
     for i in enemy_inits:
         enemy_inits[i] = int(input(i+"'s initiative roll: "))
         if enemy_inits[i] == 20:
