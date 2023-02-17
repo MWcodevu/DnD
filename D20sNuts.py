@@ -67,4 +67,3 @@ def merge(dict1, dict2, dict3):
     return res  
 start_of_session()
 #nice!
-#compare crit fails and crit hits from friendly/enemy? cant do that without roll/mod calc.
