@@ -80,7 +80,7 @@ def start_of_round(a,b,c,d):
     if int(input("Type '1' for another round, or '0' for next battle. ")) > 0:
         print("NEW ROUND START")
         print()
-        start_of_round(enemy_number,friendly_number)
+        start_of_round(enemy_number,friendly_number,c,d)
     else:
         start_of_battle()
 def merge(dict1, dict2, dict3):
